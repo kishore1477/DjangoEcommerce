@@ -1,0 +1,275 @@
+
+  {% extends 'base.html'%}
+  {% block title%} This is  index {% endblock %}
+  
+    
+
+  <!-- <style> -->
+    {% block css%} 
+    
+
+    .carousel-control-prev-icon {
+      background: black no-repeat center center;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-control-next-icon {
+      background: black no-repeat center center;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+
+    }
+
+    
+    
+    {% endblock %} 
+  
+
+
+ 
+  <!--  navigation bar code starts here-->
+
+  {% block  body%} 
+  <!-- <div class="container">
+  <h1> Hi, This is Mr.lachhmandas, How are you jana , Iam so excited to meet you please meet me as soon as possible , The have sent this flavour to for sharing my internal feelings L love you janu 🥩🍖🥓🌯😂</h1>
+  🥩🍖🥓🌯😂
+</div> -->
+  {%load static%}
+  <!--nav bar code ends here-->
+
+  <!--        carousel indicators starts from here-->
+
+  <div class="container">
+    <!-- <div id="demo" class="carousel slide my-3" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1" ></li>
+      <li data-target="#demo" data-slide-to="2" ></li>
+    </ul> -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> 
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <!-- carousel 1 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- row1 -->
+        <div class="row">
+          <div class ="col-xl-4 my-4">
+            <div class="card" style="width: 18rem;">
+              <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+              <div class="card-body">
+                <h5 class="card-title">{{Product}}</h5>
+                <p class="card-text"> {{desc}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class ="col-xl-4 my-4">
+            <div class="card" style="width: 18rem;">
+              <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class ="col-xl-4 my-4">
+            <div class="card" style="width: 18rem;">
+              <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class ="col-xl-4 my-4">
+            <div class="card" style="width: 18rem;">
+              <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+              <div class="card-body">
+                <h5 class="card-title">Card title carousel2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class ="col-xl-4 my-4">
+            <div class="card" style="width: 18rem;">
+              <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class ="col-xl-4 my-4">
+            <div class="card" style="width: 18rem;">
+              <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+         
+      </div>  
+      <!-- carousel2 -->
+      <div class="carousel-item  ">
+              <div class="row">
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title carousel2</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title carousel2</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+      </div>
+      <!-- crousel3 -->
+      <div class="carousel-item ">
+        <div class="row">
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title carousel3</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class ="col-xl-4 my-4">
+                  <div class="card" style="width: 18rem;">
+                    <img    src="{%static 'images/gulab.jpg'%}" class="card-img-top"  alt="Gulab">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              
+        </div>
+      </div>
+
+
+
+    </div>
+   
+  </div>
+  </div>
+  <!-- <a class="carousel-control-prev " href="#demo" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+<h1> This is our product <strong>{{Product}}</strong></h1>
+<h1>This is our description " {{desc}} "</h1>
+{% endblock %} 
+  
